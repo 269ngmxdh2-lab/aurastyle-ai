@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraStyle AI | The Future of Personal Fit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #F2F1EC;
+            --charcoal: #1A1A1A;
+            --gold: #A6915B;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo-main {
+            max-width: 500px;
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        .content-grid {
+            max-width: 1000px;
+            margin: -50px auto 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 2px;
+            border-left: 3px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        p { line-height: 1.8; font-weight: 300; }
+
+        .highlight { font-weight: 600; color: var(--gold); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) { .content-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Aurastyle1.png" alt="AuraStyle AI" class="logo-main">
+    </header>
+
+    <div class="content-grid">
+        <div class="card">
+            <h2>The Strategic Vision</h2>
+            <p>AuraStyle AI is a <span class="highlight">B2B SaaS integration</span> designed to partner with major apparel retailers. By utilizing <span class="highlight">Convolutional Neural Networks (CNNs)</span> for precise body shape analysis, we bridge the gap between digital shopping and personal fit.</p>
+        </div>
+
+        <div class="card">
+            <h2>Business Impact</h2>
+            <p>Our data-driven approach is projected to <span class="highlight">reduce return rates by 25%</span>, providing a clear ROI for retailers while fostering a more <span class="highlight">sustainable fashion ecosystem</span>.</p>
+        </div>
+
+        <div class="card" style="grid-column: span 2;">
+            <h2>Ethical AI Framework</h2>
+            <p>We prioritize user safety. All biometric data is processed via <span class="highlight">Edge Computing</span>, ensuring photos never leave the user's device. Our models are audited for <span class="highlight">Fit Fairness</span> to ensure inclusivity.</p>
+        </div>
+    </div>
+
+    <footer>
+        Juana Mathurin | Westchester College | 2026
+    </footer>
+
+</body>
+</html>
