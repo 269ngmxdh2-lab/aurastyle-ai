@@ -6,103 +6,67 @@
     <title>AuraStyle AI | The Future of Personal Fit</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --cream: #F2F1EC;
-            --charcoal: #1A1A1A;
-            --gold: #A6915B;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background: var(--cream);
-            color: var(--charcoal);
-            overflow-x: hidden;
-        }
-
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .logo-main {
-            max-width: 500px;
-            width: 90%;
-            margin-bottom: 20px;
-        }
-
-        .content-grid {
-            max-width: 1000px;
-            margin: -50px auto 100px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            padding: 20px;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(10px);
-            padding: 40px;
-            border-radius: 2px;
-            border-left: 3px solid var(--gold);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            font-size: 1rem;
-            margin-bottom: 20px;
-            color: var(--gold);
-        }
-
-        p { line-height: 1.8; font-weight: 300; }
-
-        .highlight { font-weight: 600; color: var(--gold); }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.7rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            opacity: 0.5;
-        }
-
-        @media (max-width: 768px) { .content-grid { grid-template-columns: 1fr; } }
+        :root { --cream: #F2F1EC; --charcoal: #1A1A1A; --gold: #A6915B; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--cream); color: var(--charcoal); }
+        header { height: 60vh; display: flex; justify-content: center; align-items: center; text-align: center; }
+        .logo-main { max-width: 400px; width: 90%; }
+        .section-container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-bottom: 60px; }
+        .image-box img { width: 100%; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); padding: 30px; border-left: 4px solid var(--gold); }
+        h2 { text-transform: uppercase; letter-spacing: 3px; font-size: 1rem; color: var(--gold); }
+        p { line-height: 1.7; font-weight: 300; }
+        footer { text-align: center; padding: 40px; font-size: 0.7rem; letter-spacing: 2px; opacity: 0.6; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="Aurastyle1.png" alt="AuraStyle AI" class="logo-main">
+        <img src="Aurastyle1.png" alt="AuraStyle AI Logo" class="logo-main">
     </header>
 
-    <div class="content-grid">
-        <div class="card">
-            <h2>The Strategic Vision</h2>
-            <p>AuraStyle AI is a <span class="highlight">B2B SaaS integration</span> designed to partner with major apparel retailers. By utilizing <span class="highlight">Convolutional Neural Networks (CNNs)</span> for precise body shape analysis, we bridge the gap between digital shopping and personal fit.</p>
+    <div class="section-container">
+        
+        <div class="grid">
+            <div class="card">
+                <h2>The Problem</h2>
+                <p>The e-commerce fashion industry faces a $600 billion crisis: high return rates driven by inconsistent sizing. Consumers want personalization powered by data.</p>
+            </div>
+            <div class="image-box">
+                <img src="luxury.jpeg" alt="Luxury Fashion">
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="image-box">
+                <img src="ai.jpeg" alt="AI Technology">
+            </div>
+            <div class="card">
+                <h2>Our AI Solution</h2>
+                <p>We employ <strong>Convolutional Neural Networks (CNNs)</strong> to analyze photos and generate a precise 3D measurement map for an accurate fit.</p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Strategic Impact</h2>
+                <p>AuraStyle AI is a B2B SaaS integration. We project a <strong>25% reduction in return rates</strong>, fostering a sustainable fashion ecosystem.</p>
+            </div>
+            <div class="image-box">
+                <img src="womenssmartphone.jpeg" alt="User Shopping">
+            </div>
         </div>
 
         <div class="card">
-            <h2>Business Impact</h2>
-            <p>Our data-driven approach is projected to <span class="highlight">reduce return rates by 25%</span>, providing a clear ROI for retailers while fostering a more <span class="highlight">sustainable fashion ecosystem</span>.</p>
+            <h2>Ethical Considerations</h2>
+            <p>Privacy is priority. Data is processed via <strong>Edge Computing</strong>; photos never leave the user's device. We audit for <strong>Fit Fairness</strong> and inclusivity.</p>
         </div>
 
-        <div class="card" style="grid-column: span 2;">
-            <h2>Ethical AI Framework</h2>
-            <p>We prioritize user safety. All biometric data is processed via <span class="highlight">Edge Computing</span>, ensuring photos never leave the user's device. Our models are audited for <span class="highlight">Fit Fairness</span> to ensure inclusivity.</p>
-        </div>
     </div>
 
     <footer>
-        Juana Mathurin | Westchester College | 2026
+        JUANA MATHURIN | THE COLLEGE OF WESTCHESTER | 2026
     </footer>
 
 </body>
